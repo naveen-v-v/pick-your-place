@@ -17,6 +17,7 @@ import { map } from 'rxjs';
 export class AvailablePlacesComponent implements OnInit {
   places = signal<Place[] | undefined>(undefined);
   isFetching = signal(false);
+  error = signal('')
   private httpClient = inject(HttpClient);
   private destroyRef = inject(DestroyRef);
 
@@ -34,6 +35,10 @@ export class AvailablePlacesComponent implements OnInit {
           },
           complete: () => {
             this.isFetching.set(false);
+          },
+          error: (err) => {
+            console.log(err);
+            this.error.set("Try again later!");
           }
         }
       );
