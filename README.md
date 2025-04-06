@@ -2,10 +2,10 @@
 
 ## Stack
 
-Backend --> Nodejs
-Frontend --> Angular
-Data --> dummy data in backend
-Webapp operations --> fetching data from bakcend API (through HTTP requests)
+- Backend --> Nodejs
+- Frontend --> Angular
+- Data --> dummy data in backend
+- Webapp operations --> fetching data from bakcend API (through HTTP requests)
 
 ## Angular Concepts
 
