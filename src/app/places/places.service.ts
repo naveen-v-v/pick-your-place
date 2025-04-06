@@ -47,7 +47,7 @@ export class PlacesService {
       .pipe(
         catchError((error) => {
           this.userPlaces.set(prevPlaces);
-          this.errorService.showError('Failed to store selected place.')
+          this.errorService.showError('Failed to store selected place.');
           return throwError(() => new Error('Failed to store selected place.'));
         })
       );
@@ -65,8 +65,10 @@ export class PlacesService {
       .pipe(
         catchError((error) => {
           this.userPlaces.set(prevPlaces);
-          this.errorService.showError('Failed to remove selected place.')
-          return throwError(() => new Error('Failed to remove selected place.'));
+          this.errorService.showError('Failed to remove the selected place.');
+          return throwError(
+            () => new Error('Failed to remove the selected place.')
+          );
         })
       );
   }
