@@ -25,3 +25,7 @@
 ### Favorites Catalog
 
 > <img src="https://github.com/naveen-v-v/pick-your-place/blob/main/public/output2.png?raw=true" alt="logo"/>
+
+### Error Handling Dialog
+
+> <img src="https://github.com/naveen-v-v/pick-your-place/blob/main/public/output3.png?raw=true" alt="logo"/>
